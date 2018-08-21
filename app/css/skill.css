@@ -2,7 +2,7 @@
   width: 50%;
   height: 100%;
   position: absolute;
-  background: linear-gradient(-60deg, #48c7b5, #91c7d3);
+  background: linear-gradient(-60deg, #48c7b5, #219485);
   border-radius: 20px 0 0 20px; }
 
 .info {
@@ -12,7 +12,7 @@
 
 .skill_expected {
   width: 70%;
-  background: linear-gradient(58deg, #c6dab4, #91c7d3);
+  background: #b5bd69;
   border-radius: 20px 0 0 20px; }
 
 .skill_expected-width, .skill-width {

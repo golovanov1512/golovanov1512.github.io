@@ -7,7 +7,7 @@
   position: relative;
   width: 35%;
   min-height: 400px;
-  background: linear-gradient(60deg, #48c7b5, #91c7d3);
+  background: linear-gradient(90deg, #48c7b5, #91c7d3);
   border-radius: 0 285px 285px 0;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 15px 20px 20px 1px rgba(255, 150, 206, 0.2); }
@@ -27,7 +27,7 @@
     height: 100px;
     bottom: 107px;
     right: 25px;
-    background: linear-gradient(60deg, #6bc7c3, #74c7c7);
+    background: linear-gradient(90deg, #6bc7c3, #8bc7d0);
     border-radius: 0px 0px 30px 200px; }
 
 .octopus_head__eye {
