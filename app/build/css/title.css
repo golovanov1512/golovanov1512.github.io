@@ -1,0 +1,26 @@
+.title {
+  text-align: center; }
+
+.title_mobile {
+  display: none; }
+
+@media only screen and (max-width: 786px) {
+  .title {
+    display: none; }
+  .title_mobile {
+    display: block; } }
+
+.h1 {
+  font-size: 41px;
+  background: linear-gradient(60deg, #e4adad 33%, #2686d2 55%, #8AA9D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fbfbfb; }
+
+@media only screen and (max-width: 786px) {
+  .h1 {
+    font-size: 32px; } }
+
+@media only screen and (max-width: 480px) {
+  .h1 {
+    font-size: 26px; } }
