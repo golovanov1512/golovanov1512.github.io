@@ -1,0 +1,100 @@
+.jobs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 200px;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.vacancies {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px;
+    .vacancies__item {
+        position: relative;
+        margin-bottom: 20px;
+        color: #222;
+        box-shadow: 0 0 20px 0 #e5e5e5;
+    }
+    i {
+        margin-right: 10px;
+        color: #c4c4c4;
+    }
+}
+
+.vacancies__title {
+    box-sizing: border-box;
+    padding: 25px 50px;
+    color: #222;
+    cursor: pointer;
+    background-color: #fafafa;
+    h3 {
+        margin-bottom: 10px;
+        color: #000;
+    }
+    .vacancies__title__arrow {
+        width: 44px;
+        height: 24px;
+        position: absolute;
+        right: 100px;
+        top: 52px;
+        background-image: url(../img/rectangle.png);
+        background-size: cover;
+        transform: rotate(0deg);
+        transition: all .8s ease;
+    }
+    .vacancies__title__arrow--active {
+        transform: rotate(180deg);
+    }
+}
+
+
+
+.vacancies__description {
+    position: relative;
+    display: none;
+    box-sizing: border-box;
+    padding: 25px 50px;
+    opacity: 1;
+    h4 {
+        margin-bottom: 12px;
+        color: #222;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+
+    a {
+        transition: all .2s ease;
+        text-decoration: underline;
+        color: #f7941e;
+    }
+}
+
+.question {
+    text-align: center;
+    background-color: #ffa500;
+    h2 {
+        font-size: 32px;
+        display: inline-block;
+        padding: 30px;
+        color: white;
+    }
+    span {
+        position: relative;
+        &:after {
+            position: absolute;
+            top: calc(50% - 17px);
+            right: -20px;
+            content: url(../img/arrow.png);
+        }
+    }
+}
