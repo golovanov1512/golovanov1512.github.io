@@ -40,15 +40,23 @@
  }
 }
 
-.octopus_head__eye {
+.octopus__eye {
+  width:100px;
+  height:100px;
   position: absolute;
-  top: 20%;
-  left: 50%;
-  width: 50px;
-  height: 50px;
-  background-image: url(../img/octopus1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  top: 40px;
+  left: 80px;
+  border-radius: 50%;
+  background: url(../img/eye.png);
+}
+
+.octopus__pupil{
+  position: absolute;
+  background-color : #4ec6b7;
+  width:30px;
+  height:30px;
+  margin-left: 40px; /* Размеры движущегося объекта */
+  border-radius:50px;
 }
 
 .octopus__body {
@@ -81,18 +89,19 @@
   margin-top: 10px;
   display: flex;
   flex-direction: row-reverse;
-  p {
-    position: absolute;
-    height: 100%;
-    line-height: 32px;
-    right: 10px;
-    z-index: 999;
-    font-size: 16px;
-    background: linear-gradient(120deg, #673c3c 33%, #104479 66%, #b328b5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #fbfbfb;
-  }
+}
+
+.octopus__text {
+  position: absolute;
+  height: 100%;
+  line-height: 32px;
+  right: 10px;
+  z-index: 999;
+  font-size: 16px;
+  background: linear-gradient(120deg, #673c3c 33%, #104479 66%, #b328b5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fbfbfb;
 }
 
 .octopus__tentacles-resistance, .octopus__tentacles-html, .octopus__tentacles-time, .octopus__tentacles-courage, .octopus__tentacles-analysis, .octopus__tentacles-language, .octopus__tentacles-business, .octopus__tentacles-programming, .octopus__tentacles-new, .octopus__tentacles-self_examination, .octopus__tentacles-patience {

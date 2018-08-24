@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -67,15 +68,23 @@ table {
   .octopus__head {
     display: none; } }
 
-.octopus_head__eye {
+.octopus__eye {
+  width: 100px;
+  height: 100px;
   position: absolute;
-  top: 20%;
-  left: 50%;
-  width: 50px;
-  height: 50px;
-  background-image: url(../img/octopus1.png);
-  background-size: cover;
-  background-repeat: no-repeat; }
+  top: 40px;
+  left: 80px;
+  border-radius: 50%;
+  background: url(../img/eye.png); }
+
+.octopus__pupil {
+  position: absolute;
+  background-color: #4ec6b7;
+  width: 30px;
+  height: 30px;
+  margin-left: 40px;
+  /* Размеры движущегося объекта */
+  border-radius: 50px; }
 
 .octopus__body {
   position: relative;
@@ -102,17 +111,18 @@ table {
   margin-top: 10px;
   display: flex;
   flex-direction: row-reverse; }
-  .octopus__tentacles p {
-    position: absolute;
-    height: 100%;
-    line-height: 32px;
-    right: 10px;
-    z-index: 999;
-    font-size: 16px;
-    background: linear-gradient(120deg, #673c3c 33%, #104479 66%, #b328b5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #fbfbfb; }
+
+.octopus__text {
+  position: absolute;
+  height: 100%;
+  line-height: 32px;
+  right: 10px;
+  z-index: 999;
+  font-size: 16px;
+  background: linear-gradient(120deg, #673c3c 33%, #104479 66%, #b328b5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fbfbfb; }
 
 .octopus__tentacles-resistance::before, .octopus__tentacles-html::before, .octopus__tentacles-time::before, .octopus__tentacles-courage::before, .octopus__tentacles-analysis::before, .octopus__tentacles-language::before, .octopus__tentacles-business::before, .octopus__tentacles-programming::before, .octopus__tentacles-new::before, .octopus__tentacles-self_examination::before, .octopus__tentacles-patience::before {
   content: "";
