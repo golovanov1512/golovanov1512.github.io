@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  margin: 0px 0 30px;
 }
 
 .octopus__head {
@@ -89,6 +90,22 @@
   margin-top: 10px;
   display: flex;
   flex-direction: row-reverse;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(-60deg, #48c7b5, #219485);
+    border-radius: 20px 0 0 20px;
+    z-index: 10;
+  }
+
+  &::after{
+    content: "";
+    height: 100%;
+    position: absolute;
+    background: #b5bd69;
+    border-radius: 20px 0 0 20px;
+  }
 }
 
 .octopus__text {
@@ -104,39 +121,22 @@
   color: #fbfbfb;
 }
 
-.octopus__tentacles-resistance, .octopus__tentacles-html, .octopus__tentacles-time, .octopus__tentacles-courage, .octopus__tentacles-analysis, .octopus__tentacles-language, .octopus__tentacles-business, .octopus__tentacles-programming, .octopus__tentacles-new, .octopus__tentacles-self_examination, .octopus__tentacles-patience {
-  &::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    background: linear-gradient(-60deg, #48c7b5, #219485);
-    border-radius: 20px 0 0 20px;
-    z-index: 10;
-  }
-
-  &::after{
-    content: "";
-    height: 100%;
-    background: #b5bd69;
-    border-radius: 20px 0 0 20px;
-  }
-}
-
 @media only screen and (max-width: 786px) {
   .octopus__tentacles{
     flex-direction: row;
     margin-top: 20px;
+    text-indent: 5px;
     border-radius: 20px;
     box-shadow: 0px 0px 5px 5px rgba(255, 150, 206, 0.2);
-    p {
-      right: auto;
-      left: 10px;
-      background: linear-gradient(120deg, #b328b5, #104479 66%, #673C3A 33%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      color: #fbfbfb;
-    }
  }
+ .octopus__text {
+    right: auto;
+    left: 10px;
+    background: linear-gradient(120deg, #b328b5, #104479 66%, #673C3A 33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fbfbfb;
+  }
 }
 
 .octopus__tentacles:nth-child(1) {
@@ -144,13 +144,12 @@
 }
 
 @media only screen and (max-width: 786px) {
-  .octopus__tentacles-resistance, .octopus__tentacles-html, .octopus__tentacles-time, .octopus__tentacles-courage, .octopus__tentacles-analysis, .octopus__tentacles-language, .octopus__tentacles-business, .octopus__tentacles-programming, .octopus__tentacles-new, .octopus__tentacles-self_examination, .octopus__tentacles-patience {
+  .octopus__tentacles {
     &::before {
       border-radius: 20px;
     }
 
     &::after{
-      content: "";
       border-radius: 20px;
     }
   }
@@ -188,11 +187,11 @@
 
 .octopus__tentacles-courage {
   &::before {
-    width: 43%;
+    width: 58%;
   }
 
   &::after{
-    width: 63%;
+    width: 75%;
   }
 }
 
