@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import "reset";
+@import "fonts";
+@import "promo";
+@import "buttons";
+@import "biography";
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  background: url(../img/underwater.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
