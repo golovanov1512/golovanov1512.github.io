@@ -264,3 +264,17 @@
     width: 95%;
   }
 }
+
+.octopus__tentacles-new_skill {
+  span {
+    color: #0526ab;
+    -webkit-text-fill-color: initial;
+  }
+  &::before {
+    width: 5%;
+  }
+
+  &::after{
+    width: 10%;
+  }
+}

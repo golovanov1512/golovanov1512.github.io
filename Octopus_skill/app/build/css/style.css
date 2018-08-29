@@ -187,16 +187,16 @@ table {
   width: 75%; }
 
 .octopus__tentacles-analysis::before {
-  width: 35%; }
+  width: 40%; }
 
 .octopus__tentacles-analysis::after {
-  width: 60%; }
+  width: 55%; }
 
 .octopus__tentacles-language::before {
-  width: 15%; }
+  width: 18%; }
 
 .octopus__tentacles-language::after {
-  width: 40%; }
+  width: 35%; }
 
 .octopus__tentacles-business::before {
   width: 80%; }
@@ -205,10 +205,10 @@ table {
   width: 85%; }
 
 .octopus__tentacles-programming::before {
-  width: 10%; }
+  width: 18%; }
 
 .octopus__tentacles-programming::after {
-  width: 45%; }
+  width: 35%; }
 
 .octopus__tentacles-new::before {
   width: 63%; }
@@ -227,6 +227,16 @@ table {
 
 .octopus__tentacles-patience::after {
   width: 95%; }
+
+.octopus__tentacles-new_skill span {
+  color: #0526ab;
+  -webkit-text-fill-color: initial; }
+
+.octopus__tentacles-new_skill::before {
+  width: 5%; }
+
+.octopus__tentacles-new_skill::after {
+  width: 10%; }
 
 .skill {
   width: 100%;
