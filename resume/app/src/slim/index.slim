@@ -3,7 +3,7 @@ html
   head
     meta[charset="utf-8"]
     meta[name="viewport" content="width=device-width, initial-scale=1.0"]
-    link[href="https://fonts.googleapis.com/css?family=Merriweather:300|Oswald:300,400" rel="stylesheet"]
+    link[href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet"]
     link[rel="stylesheet" href="font-awesome/css/font-awesome.min.css"]
     link[rel="stylesheet" type="text/css" href="vendor/slick/slick.css"]
     link[rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css"]
@@ -11,20 +11,13 @@ html
     title
       | Resume
   body
-    section.promo
-      .promo__slide
-        .promo__slide-photo
-          img[src="img/img1.png" alt=""]
-        .promo__slide-photoo
-          img[src="img/img1.jpg" alt=""]
-      .title
-        h1.h1 Golovanov Alexey
-        span.title__description Trainee in jetrockets
-      .buttons
-        .btn__group-left
-          a.btn__scroll[href="#info"] scroll
-        .btn__group-right
-          ul.btn__social
+    .container
+      section.profile
+        .profile__photo
+          img[src="img/empty.png" alt="Golovanov Alexey"]
+          .buttons__resume
+              a[href="#" target="cv"] download resume
+          ul.buttons__social_links
             li
               a[href="#"]
                 i.fa.fa-facebook
@@ -37,31 +30,172 @@ html
             li
               a[href="#"]
                 i.fa.fa-twitter
-          a.btn__download[href="#"] download resume
-    section.biography
-      .biography__img
-        img[src="img/img.jpg" alt=""]
-      .biography__info#info
-        .biography__text
-          span NAME:
-          h3.h3 Golovanov Alexey
-        .biography__text
-          span BIRTHDAY:
-          h3.h3 Dec 25, 1995
-        .biography__text
-          span EMAIL:
-          h3.h3 golovanov1512@gmail.com
-        .biography__text
-          span MOBILE:
-          h3.h3 900-018-48-99
-        .biography__text
-          span ADDRESS:
-          h3.h3 Russia, Tver, Guseva 56
-        .biography__description
-          p
-            | Responsible, hardworking, enterprising, attentive to small things.
-            | Skill to interact in a team with other professionals and managers within projects.
-            | A great desire to learn and develop professionally.
+        .profile__info
+          h2.h2 Голованов Алексей
+          span стажер в jetrockets
+          p.profile__description
+            | I’m Robert Smith. Web Developer with over 8 years of experience. Experienced with all stages of the development cycle for dynamic web projects. Having an in-depth knowledge including advanced HTML5, CSS3, JavaScript, jQuery, Angular JS. Strong background in management and leadership.
+          ul.profile__list
+            li
+              span.profile__list-name Age:
+              | 22
+            li
+              span.profile__list-name Address:
+              | Tver
+            li
+              span.profile__list-name Email:
+              | golovanov1512@gmail.com
+            li
+              span.profile__list-name Phone:
+              | 900-018-48-99
+            li
+              span.profile__list-name Nationality:
+              | Россия
+    h1.h1 skills
+    .container
+      .skills
+        .skills__title
+          h3.h3 professional_skills
+        .skill
+          .skill__title
+            span.skill__name
+              | HTML & CSS
+            span.skill__value
+              | 50%
+          .skill__progress
+            .skill__bar.skill__bar1
+        .skill
+          .skill__title
+            span.skill__name
+              | HTML & CSS
+            span.skill__value
+              | 50%
+          .skill__progress
+            .skill__bar.skill__bar1
+        .skill
+          .skill__title
+            span.skill__name
+              | HTML & CSS
+            span.skill__value
+              | 50%
+          .skill__progress
+            .skill__bar.skill__bar1
+        .skill
+          .skill__title
+            span.skill__name
+              | HTML & CSS
+            span.skill__value
+              | 50%
+          .skill__progress
+            .skill__bar.skill__bar1
+        .skill
+          .skill__title
+            span.skill__name
+              | HTML & CSS
+            span.skill__value
+              | 50%
+          .skill__progress
+            .skill__bar.skill__bar1
+    .container
+      .skills
+        .skills__title
+          h3.h3 professional_skills
+        .progress-radial.progress-25
+          .overlay 25%
+        .progress-radial.progress-50
+          .overlay 50%
+        .progress-radial.progress-75
+          .overlay 75%
+        ul.skills__other
+          li
+            i.fa.fa-check-square-o
+            | Photography
+          li
+            i.fa.fa-check-square-o
+            | Mobile App Design
+          li
+            i.fa.fa-check-square-o
+            | Logo Design
+          li
+            i.fa.fa-check-square-o
+            | 3D Animation
+          li
+            i.fa.fa-check-square-o
+            | Audio Video Editing
+          li
+            i.fa.fa-check-square-o
+            | UX and UI Design
+
+    h1.h1 work experience and education
+    .container
+      .education
+        span.education__icon
+          i.fa.fa-briefcase.fa-2x
+        .education__wrap
+          .education__data
+            p Jul 2018 - Current
+          .education__description
+            .education__title
+            span.organization
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper lacus tortor, quis bibendum odio mattis vitae. Cras porta massa pretium auctor congue. Suspendisse ante massa, euismod sit amet sem sed, viverra tristique diam.
+
+          .education__data
+            p Jul 2018 - Current
+          .education__description
+            .education__title
+            span.organization
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper lacus tortor, quis bibendum odio mattis vitae. Cras porta massa pretium auctor congue. Suspendisse ante massa, euismod sit amet sem sed, viverra tristique diam.
+
+          .education__data
+            p Jul 2018 - Current
+          .education__description
+            .education__title
+            span.organization
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper lacus tortor, quis bibendum odio mattis vitae. Cras porta massa pretium auctor congue. Suspendisse ante massa, euismod sit amet sem sed, viverra tristique diam.
+
+          .education__data
+            p Jul 2018 - Current
+          .education__description
+            .education__title
+            span.organization
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper lacus tortor, quis bibendum odio mattis vitae. Cras porta massa pretium auctor congue. Suspendisse ante massa, euismod sit amet sem sed, viverra tristique diam.
+
+          .education__data
+            p Jul 2018 - Current
+          .education__description
+            .education__title
+            span.organization
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper lacus tortor, quis bibendum odio mattis vitae. Cras porta massa pretium auctor congue. Suspendisse ante massa, euismod sit amet sem sed, viverra tristique diam.
+
+    h1.h1 contact us
+    .container
+      .contact_us
+        ul.profile__list.profile__list-footer
+          li
+            span.profile__list-name Address:
+            | Tver
+          li
+            span.profile__list-name Email:
+            | golovanov1512@gmail.com
+          li
+            span.profile__list-name Phone:
+            | 900-018-48-99
+          li
+            span.profile__list-name Skype:
+            | Россия
+    ul.buttons__social_links.buttons__social_links-footer
+      li
+        a[href="#"]
+          i.fa.fa-facebook
+      li
+        a[href="#"]
+          i.fa.fa-instagram
+      li
+        a[href="#"]
+          i.fa.fa-vk
+      li
+        a[href="#"]
+          i.fa.fa-twitter
+
     script[type="text/javascript" src="js/jquery.js"]
-    script[type="text/javascript" src="vendor/slick/slick.min.js"]
     script[type="text/javascript" src="js/script.js"]

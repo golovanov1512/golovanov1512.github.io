@@ -1,0 +1,47 @@
+.education {
+  display: flex;
+  position: relative;
+  justify-content: flex-end; }
+
+.education__wrap {
+  margin-left: 200px;
+  padding-top: 45px;
+  padding-left: 30px;
+  box-sizing: content-box;
+  border-left: 1px solid; }
+
+.education__data {
+  width: 170px;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  padding: 5px 0;
+  background-color: #e4c143;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
+
+.education__description {
+  background-color: #3a3b40;
+  padding: 20px;
+  margin-bottom: 20px; }
+  .education__description:before {
+    content: '';
+    position: absolute;
+    left: 193px;
+    margin-top: -5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #e4c143;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+
+.education__icon {
+  position: absolute;
+  left: 180px;
+  top: -20px;
+  width: 40px;
+  height: 40px;
+  background: #3a3b40;
+  text-align: center;
+  line-height: 53px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }

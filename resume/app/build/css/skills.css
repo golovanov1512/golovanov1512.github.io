@@ -1,0 +1,17 @@
+.skills__title {
+  width: 100%;
+  position: relative;
+  text-align: center; }
+
+.skills__other {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+  .skills__other li {
+    position: relative;
+    width: 50%;
+    margin-top: 10px; }
+    .skills__other li:before {
+      position: absolute; }
+  .skills__other i {
+    margin-right: 10px; }

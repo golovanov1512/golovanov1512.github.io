@@ -1,0 +1,22 @@
+.skills__title {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.skills__other {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    position: relative;
+    width: 50%;
+    margin-top: 10px;
+    &:before {
+      position: absolute;
+    }
+  }
+  i {
+    margin-right: 10px;
+  }
+}

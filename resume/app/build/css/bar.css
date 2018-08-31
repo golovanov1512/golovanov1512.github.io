@@ -1,0 +1,29 @@
+.progress-radial {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: green; }
+
+.progress-radial .overlay {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px; }
+
+.progress-25 {
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(180deg, #ff6347 50%, #2f3439 50%, #2f3439); }
+
+.progress-50 {
+  background-image: linear-gradient(-90deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439); }
+
+.progress-75 {
+  background-image: linear-gradient(0deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439); }

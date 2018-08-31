@@ -1,9 +1,14 @@
 @charset "UTF-8";
 @import "reset";
-@import "fonts";
-@import "promo";
+@import "container";
+@import "font";
+@import "profile";
 @import "buttons";
-@import "biography";
+@import "skills";
+@import "skill";
+@import "bar";
+@import "education";
+
 
 
 * {
@@ -12,10 +17,21 @@
 
 body {
   min-width: 320px;
-  background: url(../img/underwater.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  color: #aaaaaa;
+  background-color: #2a2c30;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #aaaaaa;
+}
+
+.profile, .skills, .education__description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #3a3b40;
+  padding: 20px;
 }
