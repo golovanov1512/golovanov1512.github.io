@@ -1,3 +1,6 @@
+.profile {
+  padding: 20px; }
+
 .profile__photo, .profile__info {
   padding: 0 15px; }
 
@@ -22,7 +25,7 @@
     margin-top: 20px; }
 
 .profile__list-name {
-  margin-right: 30px; }
+  margin-right: 5px; }
 
 .profile__list-footer {
   justify-content: space-around; }
@@ -33,3 +36,23 @@
     flex-direction: column; }
   .profile__list-footer span {
     margin-bottom: 20px; }
+
+@media screen and (max-width: 768px) {
+  .profile__photo {
+    width: 60%; }
+  .profile__info {
+    width: 100%;
+    margin-top: 20px; } }
+
+@media screen and (max-width: 480px) {
+  .profile__photo {
+    width: 80%; }
+  .profile__list {
+    flex-direction: column; }
+    .profile__list li {
+      width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .profile__list-footer {
+    flex-direction: column;
+    padding-left: 30px; } }

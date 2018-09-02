@@ -1,3 +1,26 @@
+.skills{
+  padding: 20px;
+}
+
+.wrap__skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills {
+  width: 48%;
+}
+
+@media screen and (max-width: 768px) {
+  .skills {
+    width: 100%;
+  }
+  .skills + .skills {
+    margin-top: 50px;
+  }
+}
+
 .skills__title {
   width: 100%;
   position: relative;
