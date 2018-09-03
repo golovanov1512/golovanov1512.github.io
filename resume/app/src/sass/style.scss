@@ -16,16 +16,18 @@
 }
 
 body {
-  min-width: 320px;
+  min-width: 400px;
   color: #aaaaaa;
   background-color: #2a2c30;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
   text-decoration: none;
   color: #aaaaaa;
+  &:hover {
+    color: #bf451f;
+  }
 }
 
 .profile, .skills, .education__description {
@@ -33,4 +35,13 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: #3a3b40;
+}
+
+em {
+  color: #428bca;
+}
+
+.git {
+  color: #e4c143;
+  text-decoration: underline;
 }

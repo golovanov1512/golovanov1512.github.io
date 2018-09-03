@@ -15,17 +15,21 @@
   width: 66.66666667%; }
 
 .profile__description {
-  margin: 40px 0 15px; }
+  margin: 15px 0; }
 
 .profile__list {
   display: flex;
   flex-wrap: wrap; }
   .profile__list li {
     width: 50%;
-    margin-top: 20px; }
+    margin-top: 20px;
+    color: white; }
+  .profile__list a {
+    color: white; }
 
 .profile__list-name {
-  margin-right: 5px; }
+  margin-right: 10px;
+  color: #aaaaaa; }
 
 .profile__list-footer {
   justify-content: space-around; }
@@ -42,15 +46,15 @@
     width: 60%; }
   .profile__info {
     width: 100%;
-    margin-top: 20px; } }
-
-@media screen and (max-width: 480px) {
-  .profile__photo {
-    width: 80%; }
+    margin-top: 20px; }
   .profile__list {
     flex-direction: column; }
     .profile__list li {
       width: 100%; } }
+
+@media screen and (max-width: 480px) {
+  .profile__photo {
+    width: 80%; } }
 
 @media screen and (max-width: 768px) {
   .profile__list-footer {

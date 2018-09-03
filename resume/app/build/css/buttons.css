@@ -1,6 +1,7 @@
 .buttons__resume {
   margin-top: 20px;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
   .buttons__resume a {
     display: inline-block;
     width: 100%;
@@ -22,7 +23,6 @@
     .buttons__social_links li a {
       display: block;
       padding: 5px 10px;
-      color: white;
       box-shadow: 0 0 5px #9499a0; }
       .buttons__social_links li a:hover {
         color: #bf451f; }
@@ -38,4 +38,5 @@
     margin: 0 20px;
     border: none; }
     .buttons__social_links-footer li a {
-      box-shadow: none; }
+      box-shadow: none;
+      color: white; }

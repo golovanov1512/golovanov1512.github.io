@@ -20,7 +20,7 @@
 }
 
 .profile__description {
-  margin: 40px 0 15px;
+  margin: 15px 0;
 }
 
 .profile__list {
@@ -29,11 +29,16 @@
   li {
     width: 50%;
     margin-top: 20px;
+    color: white;
+  }
+  a {
+    color: white;
   }
 }
 
 .profile__list-name {
-  margin-right: 5px;
+  margin-right: 10px;
+  color: #aaaaaa;
 }
 
 .profile__list-footer {
@@ -57,17 +62,17 @@
     width: 100%;
     margin-top: 20px;
   }
-}
-
-@media screen and (max-width: 480px) {
-  .profile__photo {
-    width: 80%;
-  }
   .profile__list {
     flex-direction: column;
     li {
       width: 100%;
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile__photo {
+    width: 80%;
   }
 }
 

@@ -31,4 +31,5 @@
     .skills__other li:before {
       position: absolute; }
   .skills__other i {
-    margin-right: 10px; }
+    margin-right: 10px;
+    color: #428bca; }

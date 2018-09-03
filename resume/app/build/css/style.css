@@ -38,6 +38,13 @@ table {
   padding-left: 15px;
   margin: 50px auto; }
 
+@media screen and (max-width: 768px) {
+  .container:first-child {
+    margin-top: 0; } }
+
+h1, h2 {
+  color: #428bca; }
+
 .h1 {
   font-size: 40px;
   text-align: center;
@@ -45,9 +52,15 @@ table {
 
 .h2 {
   font-size: 36px; }
+  .h2 span {
+    font-size: 16px;
+    display: block;
+    margin-top: 5px;
+    color: #aaaaaa; }
 
 .h3 {
   background-color: #e4c144;
+  color: white;
   display: inline-block;
   position: relative;
   top: -50px;
@@ -56,9 +69,19 @@ table {
   font-size: 22px;
   text-transform: uppercase; }
 
+.h4 {
+  font-size: 18px; }
+
 p {
-  font-size: 18px;
-  line-height: 35px; }
+  font-size: 16px;
+  line-height: 35px;
+  color: white; }
+
+@media screen and (max-width: 480px) {
+  .h2 {
+    font-size: 28px; }
+  p, li {
+    font-size: 14px; } }
 
 .profile {
   padding: 20px; }
@@ -77,17 +100,21 @@ p {
   width: 66.66666667%; }
 
 .profile__description {
-  margin: 40px 0 15px; }
+  margin: 15px 0; }
 
 .profile__list {
   display: flex;
   flex-wrap: wrap; }
   .profile__list li {
     width: 50%;
-    margin-top: 20px; }
+    margin-top: 20px;
+    color: white; }
+  .profile__list a {
+    color: white; }
 
 .profile__list-name {
-  margin-right: 5px; }
+  margin-right: 10px;
+  color: #aaaaaa; }
 
 .profile__list-footer {
   justify-content: space-around; }
@@ -104,15 +131,15 @@ p {
     width: 60%; }
   .profile__info {
     width: 100%;
-    margin-top: 20px; } }
-
-@media screen and (max-width: 480px) {
-  .profile__photo {
-    width: 80%; }
+    margin-top: 20px; }
   .profile__list {
     flex-direction: column; }
     .profile__list li {
       width: 100%; } }
+
+@media screen and (max-width: 480px) {
+  .profile__photo {
+    width: 80%; } }
 
 @media screen and (max-width: 768px) {
   .profile__list-footer {
@@ -121,7 +148,8 @@ p {
 
 .buttons__resume {
   margin-top: 20px;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
   .buttons__resume a {
     display: inline-block;
     width: 100%;
@@ -143,7 +171,6 @@ p {
     .buttons__social_links li a {
       display: block;
       padding: 5px 10px;
-      color: white;
       box-shadow: 0 0 5px #9499a0; }
       .buttons__social_links li a:hover {
         color: #bf451f; }
@@ -159,7 +186,8 @@ p {
     margin: 0 20px;
     border: none; }
     .buttons__social_links-footer li a {
-      box-shadow: none; }
+      box-shadow: none;
+      color: white; }
 
 .skills {
   padding: 20px; }
@@ -194,7 +222,8 @@ p {
     .skills__other li:before {
       position: absolute; }
   .skills__other i {
-    margin-right: 10px; }
+    margin-right: 10px;
+    color: #428bca; }
 
 .skill {
   width: 100%; }
@@ -202,7 +231,7 @@ p {
 .skill__title {
   display: flex;
   justify-content: space-between;
-  color: #aaaaaa; }
+  color: color; }
 
 .skill__progress {
   height: 14px;
@@ -218,11 +247,23 @@ p {
   color: #fff;
   text-align: center;
   background-color: #428bca;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   transition: width .6s ease; }
 
-.skill__bar1 {
-  width: 50%; }
+.skill__bar-html {
+  width: 65%; }
+
+.skill__bar-js {
+  width: 27%; }
+
+.skill__bar-photoshop {
+  width: 33%; }
+
+.skill__bar-git {
+  width: 42%; }
+
+.skill__bar-npm {
+  width: 20%; }
 
 .progress-radial {
   position: relative;
@@ -232,27 +273,34 @@ p {
   border-radius: 50%;
   border: 2px solid black;
   background-color: green; }
+  .progress-radial span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    text-align: center; }
 
 .progress-radial .overlay {
   position: absolute;
   width: 60px;
   height: 60px;
-  background-color: red;
+  background-color: #aaaaaa;
   border-radius: 50%;
   margin-left: 20px;
   margin-top: 20px;
   text-align: center;
   line-height: 60px;
-  font-size: 16px; }
+  font-size: 16px;
+  color: white; }
 
-.progress-25 {
-  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(180deg, #ff6347 50%, #2f3439 50%, #2f3439); }
+.progress-courage {
+  background-image: linear-gradient(-35deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439); }
 
-.progress-50 {
-  background-image: linear-gradient(-90deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439); }
+.progress-perseverance {
+  background-image: linear-gradient(-1deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439); }
 
-.progress-75 {
-  background-image: linear-gradient(0deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439); }
+.progress-patience {
+  background-image: linear-gradient(20deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439); }
 
 .education {
   display: flex;
@@ -294,6 +342,17 @@ p {
 .education__description:last-child {
   margin-bottom: 0; }
 
+.education__title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #428bca; }
+  .education__title span {
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: #aaaaaa; }
+
 .education__icon {
   position: absolute;
   left: 180px;
@@ -322,18 +381,26 @@ p {
   box-sizing: border-box; }
 
 body {
-  min-width: 320px;
+  min-width: 400px;
   color: #aaaaaa;
   background-color: #2a2c30;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300; }
+  font-family: 'Montserrat', sans-serif; }
 
 a {
   text-decoration: none;
   color: #aaaaaa; }
+  a:hover {
+    color: #bf451f; }
 
 .profile, .skills, .education__description {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: #3a3b40; }
+
+em {
+  color: #428bca; }
+
+.git {
+  color: #e4c143;
+  text-decoration: underline; }
