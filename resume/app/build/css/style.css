@@ -325,6 +325,7 @@ p {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
 
 .education__description {
+  justify-content: space-between;
   background-color: #3a3b40;
   padding: 20px;
   margin-bottom: 20px; }
