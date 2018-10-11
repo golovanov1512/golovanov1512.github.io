@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демо: Адаптивные вкладки-табы на CSS3</title>
+    <meta name="author" content="Dobrovoimaster" />
+    <meta name="description" content="Пример создания адаптивных вкладок (табов) исключительно средствами CSS3" />
+    <meta name="keywords" content="табы css, вкладки css3, адаптивные вкладки" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <style>
+        *,
+        *:before,
+        *:after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font: 14px/1 "Open Sans", sans-serif;
+            color: #555;
+            background: #fafafa;
+        }
+
+        .header {
+            display: flex;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center
+        }
+
+        .header div {
+            width: 16.66%;
+            padding: 10px;
+            border: 1px solid;
+        }
+
+        .times {
+            position: absolute;
+            left: -100px;
+            top: 45px;
+        }
+
+        .div {
+            padding: 55px 7px;
+            border: 1px solid black;
+        }
+
+        .times_text {
+            padding: 11px;
+        }
+
+        .exercise {
+            width: 100%;
+            height: 126px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .exercise div {
+            padding: 10px;
+            height: 100%;
+            width: 16.66%;
+            border: 1px solid black;
+        }
+
+        .topnav-right {
+            float: right;
+        }
+
+        .right-menu {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .right-menu li {
+            float: left;
+            list-style-type: none;
+            margin: 0;
+        }
+
+        .right-menu li a {
+            color: #B8B8B8;
+            display: block;
+            padding: 0.05em 0.75em;
+            text-decoration: none;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .right-menu li a:hover {
+            color: #fff;
+            text-shadow: none;
+        }
+
+        .right-menu li span {
+            font-size: 16px;
+            line-height: 1.2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 25px 10px 0;
+        }
+
+        h1 {
+            padding: 50px 0;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .info {
+            color: rgba(78, 78, 78, 0.8);
+            width: 100%;
+            margin: 40px auto;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        .info a {
+            color: #bbb;
+            text-decoration: none;
+        }
+
+        .info a:hover {
+            color: #888;
+        }
+
+        .tabs {
+            position: relative;
+            min-width: 320px;
+            width: 100%;
+            padding: 0px;
+            margin: 0 auto;
+        }
+
+        .tabs > section {
+            display: none;
+            background: #fff;
+            border: 1px solid black;
+        }
+
+        .tabs > section > p {
+            margin: 0 0 5px;
+            line-height: 1.5;
+            color: #383838;
+            /* прикрутим анимацию */
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+        }
+
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .tabs > input {
+            display: none;
+            position: absolute;
+        }
+
+        .tabs > label {
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 15px 25px;
+            font-weight: 600;
+            text-align: center;
+            color: #aaa;
+            border: 0px solid #ddd;
+            border-width: 1px 1px 1px 1px;
+            background: #f1f1f1;
+            border-radius: 3px 3px 0 0;
+        }
+
+        .tabs > label:before {
+            font-family: fontawesome;
+            font-weight: normal;
+            margin-right: 10px;
+        }
+
+        .tabs > label[for*="1"]:before {
+            content: "\f19a";
+        }
+
+        .tabs > label[for*="2"]:before {
+            content: "\f17a";
+        }
+
+        .tabs > label[for*="3"]:before {
+            content: "\f13b";
+        }
+
+        .tabs > label[for*="4"]:before {
+            content: "\f13c";
+        }
+
+        .tabs > label:hover {
+            color: #888;
+            cursor: pointer;
+        }
+
+        .tabs > input:checked + label {
+            color: #555;
+            border-top: 1px solid #009933;
+            border-bottom: 1px solid #fff;
+            background: #fff;
+        }
+
+        #tab1:checked ~ #content-tab1,
+        #tab2:checked ~ #content-tab2,
+        #tab3:checked ~ #content-tab3,
+        #tab4:checked ~ #content-tab4 {
+            display: block;
+        }
+
+        @media screen and (max-width: 680px) {
+            .tabs > label {
+                font-size: 0;
+            }
+            .tabs > label:before {
+                margin: 0;
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .tabs > label {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Рассписание занятий
+        </h1>
+        <div class="tabs">
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1" title="Wordpress">1 курс</label>
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2" title="Windows">2 курс</label>
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3" title="HTML5">3 курс</label>
+            <input id="tab4" type="radio" name="tabs">
+            <label for="tab4" title="CSS3">4 курс</label>
+            <div class="header">
+                <div>Понедельник</div>
+                <div>Вторник</div>
+                <div>Среда</div>
+                <div>Четверг</div>
+                <div>Пятница</div>
+                <div>Суббота</div>
+            </div>
+            <div class="times">
+                <div class="div times_text">ВРЕМЯ</div>
+                <div class="div">8:30 - 10:05</div>
+                <div class="div">10:20 - 11:55</div>
+                <div class="div">12:10 - 13-45</div>
+                <div class="div">14:00 - 15:35</div>
+                <div class="div">12:10 - 13-45</div>
+                <div class="div">14:00 - 15:35</div>
+            </div>
+            <section id="content-tab1">
+                <div class="exercise">
+                    <div>Понедельник</div>
+                    <div>Вторник</div>
+                    <div>Среда</div>
+                    <div>Четверг</div>
+                    <div>Пятница</div>
+                    <div>Суббота</div>
+                    <div>Понедельник</div>
+                    <div>Вторник</div>
+                    <div>Среда</div>
+                    <div>Четверг</div>
+                    <div>Пятница</div>
+                    <div>Суббота</div>
+                    <div>Понедельник</div>
+                    <div>Вторник</div>
+                    <div>Среда</div>
+                    <div>Четверг</div>
+                    <div>Пятница</div>
+                    <div>Суббота</div>
+                    <div>Понедельник</div>
+                    <div>Вторник</div>
+                    <div>Среда</div>
+                    <div>Четверг</div>
+                    <div>Пятница</div>
+                    <div>Суббота</div>
+                    <div>Понедельник</div>
+                    <div>Вторник</div>
+                    <div>Среда</div>
+                    <div>Четверг</div>
+                    <div>Пятница</div>
+                    <div>Суббота</div>
+                    <div>Понедельник</div>
+                    <div>Вторник</div>
+                    <div>Среда</div>
+                    <div>Четверг</div>
+                    <div>Пятница</div>
+                    <div>Суббота</div>
+                </div>
+            </section>
+            <section id="content-tab2">
+                <div class="exercise">
+                        <div>Понедельник</div>
+                        <div>Вторник</div>
+                        <div>Среда</div>
+                        <div>Четверг</div>
+                        <div>Пятница</div>
+                        <div>Суббота</div>
+                        <div>Понедельник</div>
+                        <div>Вторник</div>
+                        <div>Среда</div>
+                        <div>Четверг</div>
+                        <div>Пятница</div>
+                        <div>Суббота</div>
+                        <div>Понедельник</div>
+                        <div>Вторник</div>
+                        <div>Среда</div>
+                        <div>Четверг</div>
+                        <div>Пятница</div>
+                        <div>Суббота</div>
+                        <div>Понедельник</div>
+                        <div>Вторник</div>
+                        <div>Среда</div>
+                        <div>Четверг</div>
+                        <div>Пятница</div>
+                        <div>Суббота</div>
+                        <div>Понедельник</div>
+                        <div>Вторник</div>
+                        <div>Среда</div>
+                        <div>Четверг</div>
+                        <div>Пятница</div>
+                        <div>Суббота</div>
+                        <div>Понедельник</div>
+                        <div>Вторник</div>
+                        <div>Среда</div>
+                        <div>Четверг</div>
+                        <div>Пятница</div>
+                        <div>Суббота</div>
+                    </div>
+            </section>
+            <section id="content-tab3">
+                    <div class="exercise">
+                            <div>Понедельник</div>
+                            <div>Вторник</div>
+                            <div>Среда</div>
+                            <div>Четверг</div>
+                            <div>Пятница</div>
+                            <div>Суббота</div>
+                            <div>Понедельник</div>
+                            <div>Вторник</div>
+                            <div>Среда</div>
+                            <div>Четверг</div>
+                            <div>Пятница</div>
+                            <div>Суббота</div>
+                            <div>Понедельник</div>
+                            <div>Вторник</div>
+                            <div>Среда</div>
+                            <div>Четверг</div>
+                            <div>Пятница</div>
+                            <div>Суббота</div>
+                            <div>Понедельник</div>
+                            <div>Вторник</div>
+                            <div>Среда</div>
+                            <div>Четверг</div>
+                            <div>Пятница</div>
+                            <div>Суббота</div>
+                            <div>Понедельник</div>
+                            <div>Вторник</div>
+                            <div>Среда</div>
+                            <div>Четверг</div>
+                            <div>Пятница</div>
+                            <div>Суббота</div>
+                            <div>Понедельник</div>
+                            <div>Вторник</div>
+                            <div>Среда</div>
+                            <div>Четверг</div>
+                            <div>Пятница</div>
+                            <div>Суббота</div>
+                        </div>
+            </section>
+            <section id="content-tab4">
+                    <div class="exercise">
+                            <div>Понедельник</div>
+                            <div>Вторник</div>
+                            <div>Среда</div>
+                            <div>Четверг</div>
+                            <div>Пятница</div>
+                            <div>Суббота</div>
+                            <div>Понедельник</div>
+                            <div>Вторник</div>
+                            <div>Среда</div>
+                            <div>Четверг</div>
+                            <div>Пятница</div>
+                            <div>Суббота</div>
+                            <div>Понедельник</div>
+                            <div>Вторник</div>
+                            <div>Среда</div>
+                            <div>Четверг</div>
+                            <div>Пятница</div>
+                            <div>Суббота</div>
+                            <div>Понедельник</div>
+                            <div>Вторник</div>
+                            <div>Среда</div>
+                            <div>Четверг</div>
+                            <div>Пятница</div>
+                            <div>Суббота</div>
+                            <div>Понедельник</div>
+                            <div>Вторник</div>
+                            <div>Среда</div>
+                            <div>Четверг</div>
+                            <div>Пятница</div>
+                            <div>Суббота</div>
+                            <div>Понедельник</div>
+                            <div>Вторник</div>
+                            <div>Среда</div>
+                            <div>Четверг</div>
+                            <div>Пятница</div>
+                            <div>Суббота</div>
+                        </div>
+            </section>
+        </div>
+    </div>
+</body>
