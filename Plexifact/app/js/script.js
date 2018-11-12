@@ -37,7 +37,7 @@ $(".arrow__right").on("click", function() {
   goSlider("plus");
 });
 
-$(".vacancies__item .vacancies__title").on("click", vacancies);
+$(".vacancies__title").on("click", vacancies);
 function vacancies() {
   $(this)
     .find(".vacancies__title__arrow")
