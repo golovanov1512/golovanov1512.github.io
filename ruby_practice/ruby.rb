@@ -15,7 +15,7 @@ class PasswordGen
 
   def generate
     password = ""
-    @count_symbol.times{|index| password << vowel_or_consonant(index) }
+    @count_symbol.times{ |index| password << vowel_or_consonant(index) }
     password
   end
 
@@ -25,5 +25,5 @@ class PasswordGen
 end
 
 p 'Enter password length'
-a =  PasswordGen.new(gets.chomp.to_i)
-p "Your password : #{ a.generate }"
+password_gen =  PasswordGen.new(gets.chomp.to_i)
+p "Your password : #{ password_gen.generate }"

@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<title>Shedule</title>
+</head>
+<body>
+<header>
+	<h1>Рассписание пар для 1 курса</h1>
+</header>
+<div class="cd-tabs">
+	<nav>
+		<ul class="cd-tabs-navigation">
+			<li><a data-content="n1" class="selected" href="#0">11 группа</a></li>
+			<li><a data-content="n2" href="#0">12 группа</a></li>
+			<li><a data-content="n3" href="#0">14 группа</a></li>
+			<li><a data-content="n4" href="#0">16 групап</a></li>
+		</ul> <!-- cd-tabs-navigation -->
+	</nav>
+	<ul class="week">
+		<li class="">Понедельник</li>
+		<li class="">Вторник</li>
+		<li class="">Среда</li>
+		<li class="">Четверг</li>
+		<li class="">Пятница</li>
+		<li class="">Суббота</li>
+	</ul>
+	<ul class="cd-tabs-content">
+		<li data-content="n1" class="selected flex">
+			<div class="day pn" >
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Mат. Анал<span>Математический анализ</span></p>
+					<a href="http://university.tversu.ru/person/231/" target="_blank" class="tutor">Михно Г.А.</a>
+					<span class="time">8:30 - 10:05</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="http://university.tversu.ru/person/970/" target="_blank" class="tutor">Захарова И.В.</a>
+					<span class="time">10:20 - 11:55</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Алгебра<span>Алгебра и геометрия</span></p>
+					<a href="#" class="tutor">Васильев А.А.</a>
+					<span class="time">12:10 - 13:45</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day vt" >
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Алебра<span>Алгебра и Геометрия</span></p>
+					<a href="#" class="tutor">Шестакова Е.Г.</a>
+					<span class="time">10:20 - 11:55</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day sr" >
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Mат. Анал<span>Дискретная математика</span></p>
+					<a href="#" class="tutor">Михно Г.А.</a>
+					<span class="time">8:30 - 10:05</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Дис. Мат<span>Дискретная математика</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Тер. Вер<span>Теоретические основы информатики</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day ct" >
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Дис. Мат<span>Дискретная математика</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Тер. Вер<span>Теоретические основы информатики</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day pt" >
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Дис. Мат<span>Дискретная математика</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Тер. Вер<span>Теоретические основы информатики</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Дис. Мат<span>Дискретная математика</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day sb" >
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Mат. Анал<span>Математический анализ</span></p>
+					<a href="#" class="tutor">Михно Г.А.</a>
+					<span class="time">8:30 - 10:05</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Алгебра<span>Алгебра и геометрия</span></p>
+					<a href="#" class="tutor">Васильев А.А.</a>
+					<span class="time">12:10 - 13:45</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+		</li>
+
+		<li data-content="n2" class="flex">
+			<div class="day pn" >
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Mат. Анал<span>Математический анализ</span></p>
+					<a href="#" class="tutor">Михно Г.А.</a>
+					<span class="time">8:30 - 10:05</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">10:20 - 11:55</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Алгебра<span>Алгебра и геометрия</span></p>
+					<a href="#" class="tutor">Васильев А.А.</a>
+					<span class="time">12:10 - 13:45</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day vt" >
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">10:20 - 11:55</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Алгебра<span>Алгебра и геометрия</span></p>
+					<a href="#" class="tutor">Васильев А.А.</a>
+					<span class="time">12:10 - 13:45</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day sr" >
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Алгебра<span>Алгебра и геометрия</span></p>
+					<a href="#" class="tutor">Васильев А.А.</a>
+					<span class="time">12:10 - 13:45</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">10:20 - 11:55</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Алгебра<span>Алгебра и геометрия</span></p>
+					<a href="#" class="tutor">Васильев А.А.</a>
+					<span class="time">12:10 - 13:45</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day ct" >
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Дис. Мат<span>Дискретная математика</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Тер. Вер<span>Теоретические основы информатики</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day pt" >
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Дис. Мат<span>Дискретная математика</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Тер. Вер<span>Теоретические основы информатики</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Дис. Мат<span>Дискретная математика</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day sb" >
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Mат. Анал<span>Математический анализ</span></p>
+					<a href="#" class="tutor">Михно Г.А.</a>
+					<span class="time">8:30 - 10:05</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Алгебра<span>Алгебра и геометрия</span></p>
+					<a href="#" class="tutor">Васильев А.А.</a>
+					<span class="time">12:10 - 13:45</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+		</li>
+
+		<li data-content="n3" class="flex">
+			<div class="day pn" >
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Mат. Анал<span>Математический анализ</span></p>
+					<a href="#" class="tutor">Михно Г.А.</a>
+					<span class="time">8:30 - 10:05</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">10:20 - 11:55</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day vt" >
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Алебра<span>Алгебра и Геометрия</span></p>
+					<a href="#" class="tutor">Шестакова Е.Г.</a>
+					<span class="time">10:20 - 11:55</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day sr" >
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">10:20 - 11:55</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Алгебра<span>Алгебра и геометрия</span></p>
+					<a href="#" class="tutor">Васильев А.А.</a>
+					<span class="time">12:10 - 13:45</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day ct" >
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Дис. Мат<span>Дискретная математика</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Тер. Вер<span>Теоретические основы информатики</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day pt" >
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Дис. Мат<span>Дискретная математика</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Тер. Вер<span>Теоретические основы информатики</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Дис. Мат<span>Дискретная математика</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day sb" >
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Mат. Анал<span>Математический анализ</span></p>
+					<a href="#" class="tutor">Михно Г.А.</a>
+					<span class="time">8:30 - 10:05</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Алгебра<span>Алгебра и геометрия</span></p>
+					<a href="#" class="tutor">Васильев А.А.</a>
+					<span class="time">12:10 - 13:45</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+		</li>
+
+		<li data-content="n4" class="flex">
+			<div class="day pn" >
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Mат. Анал<span>Математический анализ</span></p>
+					<a href="#" class="tutor">Михно Г.А.</a>
+					<span class="time">8:30 - 10:05</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">10:20 - 11:55</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Алгебра<span>Алгебра и геометрия</span></p>
+					<a href="#" class="tutor">Васильев А.А.</a>
+					<span class="time">12:10 - 13:45</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day vt" >
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Алебра<span>Алгебра и Геометрия</span></p>
+					<a href="#" class="tutor">Шестакова Е.Г.</a>
+					<span class="time">10:20 - 11:55</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day sr" >
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">10:20 - 11:55</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Алгебра<span>Алгебра и геометрия</span></p>
+					<a href="#" class="tutor">Васильев А.А.</a>
+					<span class="time">12:10 - 13:45</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day ct" >
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Дис. Мат<span>Дискретная математика</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Тер. Вер<span>Теоретические основы информатики</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day pt" >
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Дис. Мат<span>Дискретная математика</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Тер. Вер<span>Теоретические основы информатики</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Дис. Мат<span>Дискретная математика</span></p>
+					<a href="#" class="tutor">Золотов А.С.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+			</div>
+			<div class="day sb" >
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Mат. Анал<span>Математический анализ</span></p>
+					<a href="#" class="tutor">Михно Г.А.</a>
+					<span class="time">8:30 - 10:05</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type lek">лек<span>Лекция</span></span>
+					<p class="subject">Алгебра<span>Алгебра и геометрия</span></p>
+					<a href="#" class="tutor">Васильев А.А.</a>
+					<span class="time">12:10 - 13:45</span>
+					<span class="time aud">Ауд: 206</span>
+				</div>
+				<div class="para">
+					<span class="type pr">пр<span>Практика</span></span>
+					<p class="subject">Эл. Мат<span>Элементарная математика</span></p>
+					<a href="#" class="tutor">Захарова И.В.</a>
+					<span class="time">14:00 - 15:35</span>
+					<span class="time aud">Ауд: 310</span>
+				</div>
+		</li>
+	</ul> <!-- cd-tabs-content -->
+</div> <!-- cd-tabs -->
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
