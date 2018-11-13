@@ -1,0 +1,35 @@
+.contacts-wrap {
+  padding-left: 55px; }
+
+.contacts__info {
+  display: flex;
+  flex-wrap: wrap; }
+
+.contacts__text {
+  position: relative;
+  width: 50%;
+  padding: 0px 65px;
+  text-align: left;
+  display: flex;
+  align-items: flex-start; }
+
+.contacts__map {
+  height: 316px;
+  margin-top: 50px; }
+  .contacts__map iframe {
+    width: 100%;
+    height: 100%; }
+
+@media (max-width: 768px) {
+  .contacts-wrap {
+    padding: 15px; }
+  .contacts__text {
+    padding: 0 0 0 30px; } }
+
+@media (max-width: 480px) {
+  .contacts__text {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 0 0 30px; }
+  .contacts__text:last-child {
+    margin-bottom: 0; } }

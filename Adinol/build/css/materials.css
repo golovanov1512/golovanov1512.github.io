@@ -1,0 +1,10 @@
+.materials__title {
+  margin: 35px 0; }
+
+@media (max-width: 991px) {
+  .materials__title {
+    margin: 25px 0; } }
+
+@media (max-width: 768px) {
+  .materials__title {
+    margin: 15px 0; } }

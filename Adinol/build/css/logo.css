@@ -1,0 +1,14 @@
+.logo {
+  width: 150px; }
+
+.logo__header {
+  margin-top: -10px; }
+
+.logo__footer {
+  margin: 0px 0 30px; }
+
+@media (max-width: 991px) {
+  .logo {
+    width: 100px; }
+  .logo__header {
+    margin-top: -15px; } }
